@@ -25,11 +25,6 @@
 
 - (void)launchChat:(id)sender {
     BJChatViewControllerOptions *config = [[BJChatViewControllerOptions alloc] init];
-    config.clientId = @"b-fe6ca16c-3f25-11e9-9d22-a08cfdd4254d";
-    config.botId = @"97742ff7-a5aa-4ae3-b6b8-553b81399054";
-    config.title = @"CallHealth Chat Bot";
-    config.accentColor = @"#323b8c";
-    config.isAnonymous = YES;
     UIViewController *viewController = [BJWebSDK viewControllerWithConfig:config];
     [self.navigationController presentViewController:viewController animated:YES completion:nil];
 }

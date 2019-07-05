@@ -16,7 +16,6 @@
 }
 
 -(NSString *)configJSON {
-    //    NSString *botConfig = @"{\"title\": \"Selvel One\", \"botId\": \"9fb7c938-cc3a-43d5-b6eb-b10649c8ac98\", \"clientId\": \"b-44929fd2-6d6d-11e9-9d22-a08cfdd4254d\", \"isAnonymous\": false, \"isLocationRequired\": true, \"botIcon\": \"https://qa.botjet.ai/media/documents/59063840getloyaltyvouqrs.jpeg\", \"accentColor\": \"#009EFF\", \"host\": \"https://qa.botjet.ai\", \"senderId\": \"ecd94f2f53afca19\",\"profileMeta\": {\"firstName\":\"Google:Android SDK built for x86\",\"deviceId\":\"ecd94f2f53afca19\"}}";
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:@{@"clientId": self.clientId, @"botId" : self.botId}];
     
     dict[@"title"] = self.title ?:@"24/7 Chat Support";
