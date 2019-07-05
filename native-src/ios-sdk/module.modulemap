@@ -1,0 +1,6 @@
+framework module BotJetWebSDK {
+    umbrella header "BotJetWebSDK.h"
+    
+    export *
+    module * { export * }
+}
