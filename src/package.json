@@ -1,13 +1,13 @@
 {
 	"name": "nativescript-plugin-botjet",
-	"version": "1.0.0",
-	"description": "Your awesome NativeScript plugin.",
+	"version": "0.1.0",
+	"description": "Unofficial nativescript plugin for botjet.ai.",
 	"main": "botjet",
 	"typings": "index.d.ts",
 	"nativescript": {
 		"platforms": {
-			"android": "5.4.0",
-			"ios": "5.4.0"
+			"android": "5.2.0",
+			"ios": "5.2.0"
 		}
 	},
 	"repository": {
