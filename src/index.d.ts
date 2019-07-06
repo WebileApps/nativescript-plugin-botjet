@@ -1,6 +1,22 @@
-import { Common } from './myPluginClassName.common';
-export declare class MyPluginClassName extends Common {
+import { BotJetSDKCommon } from './botjet.common';
+
+export declare class BotJetConfig {
+  clientId : string;
+  botId : string;
+  senderId : string;
+
+  isAnonymous?: boolean;
+  title ?: string;
+  isLocationRequired ?: boolean;
+  host ?: string;
+  profileMeta ?: any;
+  botIcon ?: string;
+  accentColor ?: string;
+
+}
+
+export declare class BotJetSDK extends BotJetSDKCommon {
   // define your typings manually
   // or..
-  // take the ios or android .d.ts files and copy/paste them here
+  public static launchChatWithConfig(config: BotJetConfig) : void;
 }
