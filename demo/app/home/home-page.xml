@@ -8,5 +8,6 @@
 
     <GridLayout>
         <!-- Add your page content here -->
+        <Button tap="onTap" text="Launch Chat"></Button>
     </GridLayout>
 </Page>
