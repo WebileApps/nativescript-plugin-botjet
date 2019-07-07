@@ -6,7 +6,7 @@ import { topmost } from "tns-core-modules/ui/frame";
 declare var BJChatViewControllerOptions, BJWebSDK;
 
 export class BotJetSDK extends BotJetSDKCommon {
-    public launchChatWithConfig(config: BotJetConfig) : void {
+    public static launchChatWithConfig(config: BotJetConfig) : void {
         const options = BJChatViewControllerOptions.alloc().init();
         options.clientId = config.clientId;
         options.botId = config.botId;
@@ -35,10 +35,6 @@ export class BotJetSDK extends BotJetSDKCommon {
             options.senderId = config.senderId;
         }
 
-        this.currentPage.ios.presentViewControllerAnimatedCompletion(BJWebSDK.viewControllerWithConfig(options), true, null);
-    }
-
-    private get currentPage():Page {
-        return topmost().currentPage;
+        topmost().currentPage.ios.presentViewControllerAnimatedCompletion(BJWebSDK.viewControllerWithConfig(options), true, null);
     }
 }
