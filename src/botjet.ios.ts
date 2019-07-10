@@ -13,7 +13,7 @@ export class BotJetSDK extends BotJetSDKCommon {
         if (config.title) {
             options.title = config.title;
         }
-        if (config.isAnonymous) {
+        if (typeof config.isAnonymous !== "undefined") {
             options.isAnonymous = config.isAnonymous;
         }
         if (config.accentColor) {
@@ -25,7 +25,7 @@ export class BotJetSDK extends BotJetSDKCommon {
         if (config.host) {
             options.host = config.host;
         }
-        if (config.isLocationRequired) {
+        if (typeof config.isLocationRequired !== "undefined") {
             options.isLocationRequired = config.isLocationRequired;
         }
         if (config.profileMeta) {

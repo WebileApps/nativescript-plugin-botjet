@@ -32,6 +32,7 @@
     config.title = @"CallHealth Chat Bot";
     config.accentColor = @"#323b8c";
     config.isAnonymous = NO;
+    config.isLocationRequired = NO;
     [self presentViewController:[BJWebSDK viewControllerWithConfig:config] animated:YES completion:nil];
 }
 

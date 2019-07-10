@@ -12,15 +12,20 @@
 @implementation BJChatViewControllerOptions
 
 - (instancetype)init {
-    return [super init];
+    self = [super init];
+    if (self) {
+        self.isLocationRequired = YES;
+        self.isAnonymous = YES;
+    }
+    return self;
 }
 
 -(NSString *)configJSON {
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:@{@"clientId": self.clientId, @"botId" : self.botId}];
     
     dict[@"title"] = self.title ?:@"24/7 Chat Support";
-    dict[@"isAnonymous"] = @(self.isAnonymous?:NO);
-    dict[@"isLocationRequired"] = @(self.isLocationRequired?:YES);
+    dict[@"isAnonymous"] = [NSNumber numberWithBool:self.isAnonymous];
+    dict[@"isLocationRequired"] = [NSNumber numberWithBool:self.isLocationRequired];
     dict[@"botIcon"] = self.botIcon?:@"https://image.icons8.com/?id=32439&format=png&size=32&color=000000";
     dict[@"accentColor"] = self.accentColor?:@"#009EFF";
     dict[@"host"] = self.host?:@"https://qa.botjet.ai";

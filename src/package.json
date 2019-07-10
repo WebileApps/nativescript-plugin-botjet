@@ -1,6 +1,6 @@
 {
 	"name": "nativescript-plugin-botjet",
-	"version": "0.1.2",
+	"version": "0.1.4",
 	"description": "Unofficial nativescript plugin for botjet.ai.",
 	"main": "botjet",
 	"typings": "index.d.ts",

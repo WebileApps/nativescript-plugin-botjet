@@ -27,6 +27,14 @@ const config : BotJetConfig =  {
 
 BotJetSDK.launchChatWithConfig(config);
 ```
+
+## Change Log
+
+* `0.1.3` 
+    1) Fixed isLocationRequired property for iOS.
+    2) Fixed Title property for Android and removed native loading view.
+* `0.1.4`
+    1) Fixed isLocationProperty in nativescript plugin code. 
     
 ## License
 

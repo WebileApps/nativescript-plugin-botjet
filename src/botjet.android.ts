@@ -14,13 +14,13 @@ export class BotJetSDK extends BotJetSDKCommon {
             options.setAccentColor("#323b8c");
         }
         if (config.title) {
-            // options.setTitle(config.title);
+            options.setTitle(config.title);
         }
         if (config.isAnonymous) {
             options.setAnonymous(config.isAnonymous);
         }
         if (config.botIcon) {
-            // options.botIcon = config.botIcon;
+            options.setBotIcon(config.botIcon);
         }
         options.setHost(config.host || "https://qa.botjet.ai");
         options.setLocationRequired(config.isLocationRequired || true);
